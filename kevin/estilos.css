@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,100&family=Poppins:wght@100&display=swap');
+*{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth; /* IDEA: es mas despacio el desplzamiento */
+}
+h1{font-size: 3.5em;
+font-family:outfit; } /* IDEA: los titulos los hice con h1 por el tamañno y tienen el formato de letra */
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;
+text-align: center;}
+ul{list-style: none;}
+body{
+
+  margin: 0;
+}
+
+button{
+  font-size:1.5em;
+  font-weight: bold;
+  padding: 10px 35px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: BLACK;
+}
+button:hover{
+  background-color: grey;
+}
+
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-letra{
+  color: grey;
+}
+
+img{
+  display: inline-block;
+  height: 100px;
+  width: auto;
+}
+header{
+  background-color: rgba(255,255,255);
+}
+
+header .logo{
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 1.45em;
+}
+
+
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+header nav{
+  display: flex; /* IDEA: columna */
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+
+header a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+header a:hover{
+  color:grey; /* IDEA: color cuadno pones el mouse */
+}
+
+/* IDEA: parte principal */
+#hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh; /* IDEA: es el cuadro para la imagen */
+color: white;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),  /* IDEA: son colores de arriba y abajo */
+    rgba(0, 0, 0, 0.5)
+    )
+  ,url("assets/fotos/fondo11.png");
+  /* IDEA: son para posicionarlo al centro */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#hero h1{
+  color: black; /* IDEA: color de aprende a programar con los mejores */
+}
+
+/* IDEA: seccion de la empresa */
+
+#sobre-noso{
+
+}
+#sobre-noso .container{
+  text-align: center;
+  padding: 200px 12px; /* IDEA: margen de costados y alto */
+}
+
+/* IDEA: planes que ofrece */
+#planes{
+background-color: white;
+  color: blac;
+    text-align: center; /* IDEA: lo centra el texto */
+}
+#planes .container{
+padding: 100px 0px; /* IDEA: borde del cuadrado negro */
+}
+#planes h2{
+  margin-top: 0;
+  font-size: 3.5em; /* IDEA: ventajas tamaño de letra */
+}
+
+#planes .carta{
+  background-size: cover;
+  background-position: center center;
+  padding: 50px; /* IDEA: imagen tamñano */
+  margin: 20px;/* IDEA: borde */
+  border-radius: 15px;
+}
+
+/* IDEA: alianzas */
+#alianzas{
+  background-color: black;
+  color: white;
+    text-align: center; /* IDEA: lo centra el texto */
+}
+#alianzas .container{
+padding: 100px 0px; /* IDEA: borde del cuadrado negro */
+}
+#alianzas h2{
+  margin-top: 0;
+  font-size: 3.5em; /* IDEA: ventajas tamaño de letra */
+}
+#alianzas p{
+  display:none;
+}
+#alianzas .carta{
+  background-size: cover;
+  background-position: center center;
+  padding: 50px; /* IDEA: imagen tamñano */
+  margin: 20px;/* IDEA: borde */
+  border-radius: 15px;
+}
+
+
+.carta:first-child{
+  background-image:  linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      )
+    ,url("assets/fotos/gris.png");
+}
+.carta:nth-child(2){ /* IDEA: juntar en 3 las cartas nth */
+  background-image:  linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      )
+    ,url("assets/fotos/gris.png");
+}
+.carta:nth-child(3){
+  background-image:  linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+      )
+    ,url("assets/fotos/gris.png");
+}
+
+#alianzas{
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  color: black;
+  height: 70vh;
+}
+
+
+
+
+
+-----
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background: WHITE;
+}
+
+.container__cards{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+/* IDEA: caracteristicas */
+------
+#descarga{
+  background-color: ;
+}
+#descarga .container{
+  text-align: center;
+  padding: 250px 12px;
+
+}
+
+
+---
+
+
+
+
+.buttons {
+  min-width: 700px;
+  display: flex;
+  justify-content:center;
+  background: black;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #314652;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+
+/* IDEA: parte final footer  */
+
+footer{
+  background: white;
+}
+footer p{
+  margin 0;
+  padding: 12px;
+  color:white;
+}
+footer .container{
+  height: 150px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+/* IDEA: parte del responsive cuando es minimo cambia */
+@media (min-width: 720px) {
+  header{
+    position: fixed;
+    width: 100%;
+  }
+header .container{
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+header nav{
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-right: 20px;
+}
+
+#sobre-noso .container{
+display:flex;
+justify-content: center;
+}
+
+#sobre-noso .texto{
+  width: 50%;
+  max-width: 600px;
+  text-align: initial;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#sobre-noso h2{
+  margin-top: 0px;
+}
+#sobre-noso .img-container{
+  background-image: url("assets/fotos/somosrunning.png");
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 400px;
+}
+
+#planes .expos{
+  display: flex;
+  justify-content: center;
+}
+#planes p{
+  display:block;
+  margin-bottom: 30px;  /* IDEA: ca pongo el lorem de las cartas */
+}
+
+#planes .carta{
+
+}
+
+#descarga{
+background-image: url("assets/fotos/descargar.png");
+background-repeat: no-repeat;
+background-size: 500px 400px;
+background-position: calc(100vw - 500px) , 120px;
+}
+
+#descarga .container{
+  text-align: initial
+}
+
+
+
+}
+
+
+/* IDEA: seccion contactanos */
+----------------
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;1,100&family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hepta Slab;
+}
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+    background: #e39403;
+}
+
+@media(min-width:1200px){
+  #descarga{
+    background-position-x: calc(100vw - 800px);
+  }
+}
+
+@media(max-width 425px)
+
+.form-titulo{
+  font
+}
